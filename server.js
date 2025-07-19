@@ -15,7 +15,7 @@ const server = http.createServer(app);
 // This is crucial for allowing your Vercel frontend to communicate with this backend.
 // Replace 'https://your-frontend-domain.vercel.app' with your actual Vercel deployment URL.
 const corsOptions = {
-  origin: "*", // For development, you can use '*' but for production, specify your frontend URL
+  origin: "https://nepchat-frontend.vercel.app", // For development, you can use '*' but for production, specify your frontend URL
   methods: ["GET", "POST"]
 };
 app.use(cors(corsOptions));
